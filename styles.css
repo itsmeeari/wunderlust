@@ -25,6 +25,10 @@ h1 {
     font-weight: 300;
 }
 
+h2 {
+    position: relative;
+}
+
 nav a {
     display: inline-block;
     text-decoration: none;
@@ -42,17 +46,7 @@ nav li {
 nav li:hover {
     background-color: #F6D64A;
 }
-/* INTRO SECTION */
-#intro {
-    display: flex;
-    flex-direction: row;
-    padding: 10px 20px 10px 20px;
-}
 
-#intro p {
-    padding-top: 40px;
-    margin-left: -100px;
-}
 /* PLAN SECTION */
 #plan {
     background-color: #F6D64A;
