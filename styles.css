@@ -26,7 +26,7 @@ h1 {
 }
 
 nav a {
-    
+    display: inline-block;
     text-decoration: none;
     color: black;
     padding: 1rem;
@@ -42,7 +42,6 @@ nav li {
 nav li:hover {
     background-color: #F6D64A;
 }
-
 /* INTRO SECTION */
 #intro {
     display: flex;
@@ -294,10 +293,14 @@ footer a {
     }
 
     #testimonials div {
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
-        justify-content: space-between;
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "div div"
+        "div div"; 
     }
 
     #about div {
@@ -311,5 +314,4 @@ footer a {
         display: grid;
         justify-items: start;
     }
-
-  }
+ }
