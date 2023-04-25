@@ -19,22 +19,17 @@ header {
     padding: 1rem;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 
 h1 {
-    display: flex;
     font-weight: 300;
 }
 
-header p {
+nav div {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-nav {
-    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }   
 
 nav a {
@@ -54,12 +49,39 @@ nav li {
 nav li:hover {
     background-color: #F6D64A;
 }
+/* INTRO SECTION */
+#intro {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px 10px 20px;
+}
 
-
-
-
+#intro p {
+    padding-top: 40px;
+    margin-left: -100px;
+}
+/* PLAN SECTION */
 #plan {
     background-color: #F6D64A;
+    padding: 6px 6px 15px 6px; 
+}
+
+#plan div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+}
+
+#plan h3 {
+    font-style: normal;
+    padding: 8px 0 0 10px;
+}
+
+#plan h4 {
+    font-weight: bold;
+    text-transform: uppercase; 
 }
 
 #plan img {
@@ -67,6 +89,74 @@ nav li:hover {
     padding: 2rem;
     border: 0.20rem solid white;
     border-radius: 0.25em;
+}
+/* TESTIMONIALS SECTION */
+#testimonials div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 6px 6px 15px 6px; 
+}
+
+#testimonials h4 {
+    text-transform: uppercase;
+}
+
+#testimonials q {
+    font-style: italic;
+}
+
+/* ABOUT SECTION */
+#about {
+    background-color: #499BD2;
+    padding: 6px 6px 15px 6px; 
+}
+
+#about div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+}
+/* CONTACT FORM SECTION */
+#contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding: 6px 6px 15px 6px; 
+}
+
+#names input, #nums input, #selects select {
+    border-color: #9B26B0;
+}
+
+fieldset {
+    border: none;
+}
+
+.radio-input {
+    color:#9B26B0;
+}
+
+.required {
+    color: red;
+}
+
+.form-required {
+    font-size: small;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#mySubmit {
+    background-color: #9B26B0;
+    color: white;
+    padding: 4px 4px 4px 4px;
+    text-transform: uppercase;
 }
 /* SKIP TO CONTENT */
 #skip {
@@ -113,7 +203,6 @@ nav li:hover {
 
     nav li {
         display: flex;
-        flex-direction: column;
         background-color: #55BCD5;
         text-align: center;
     }
