@@ -25,14 +25,8 @@ h1 {
     font-weight: 300;
 }
 
-nav div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-start;
-}   
-
 nav a {
+    
     text-decoration: none;
     color: black;
     padding: 1rem;
@@ -40,7 +34,6 @@ nav a {
 
 nav li {
     list-style-type: none;
-    background-color: white;
     padding: 1rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -125,10 +118,11 @@ nav li:hover {
 /* CONTACT FORM SECTION */
 #contact {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
     text-transform: uppercase;
-    padding: 6px 6px 15px 6px; 
+    padding: 15px 4px 15px 6px; 
 }
 
 #names input, #nums input, #selects select {
@@ -137,10 +131,8 @@ nav li:hover {
 
 fieldset {
     border: none;
-}
-
-.radio-input {
-    color:#9B26B0;
+    display: flex;
+    flex-direction: row;
 }
 
 .required {
@@ -158,6 +150,20 @@ fieldset {
     color: white;
     padding: 4px 4px 4px 4px;
     text-transform: uppercase;
+}
+/* FOOTER */
+footer {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
 }
 /* SKIP TO CONTENT */
 #skip {
@@ -188,28 +194,80 @@ fieldset {
   @media screen and (min-width: 320px) {
     header {
         display: flex;
-        flex-direction: column;
-        
-  }
-    #toggle {
-        background-color: black;
-        color: white;
-        width: 320px;
-        max-height: 0;
-        padding: 0;
-        margin: 0 auto;
-        -webkit-transition: all 0.3s ease;
-    }
-    nav a {
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    nav li {
+    nav {
         display: flex;
+        align-items: center;
+        flex-grow: 2;
         background-color: #55BCD5;
-        text-align: center;
     }
 
+    nav label, nav input {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
 
+    #intro {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
+    #img-grid {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    #plan div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #testimonials div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #testimonials section, #about section, #intro div {
+        padding: 10px 5px 10px 5px;
+    }
+
+    #about div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #contact div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 10px;
+    } 
+
+  }
+
+  @media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
   }
