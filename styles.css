@@ -1,4 +1,30 @@
 :root {
+    --black: #222222;
+    --white: #FFFFFF;
     --aqua: #55BCD5;
+    --blue: #499BD2;
+    --purple: #9B26B0;
+    --yellow: #F6D64A;
     font-size: 16px;
 }
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+#skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
