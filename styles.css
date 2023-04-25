@@ -14,6 +14,61 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+header {
+    background-image: linear-gradient(#55BCD5, white);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1 {
+    display: flex;
+    font-weight: 300;
+}
+
+header p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+}   
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+nav li {
+    list-style-type: none;
+    background-color: white;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    background-color: #F6D64A;
+}
+
+
+
+
+#plan {
+    background-color: #F6D64A;
+}
+
+#plan img {
+    background-color: #55BCD5;
+    padding: 2rem;
+    border: 0.20rem solid white;
+    border-radius: 0.25em;
+}
+/* SKIP TO CONTENT */
 #skip {
     position: absolute;
     left: -10000px;
@@ -27,4 +82,42 @@ body {
     position: static;
     width: auto;
     height: auto;
+  }
+/* SCREEN READER ONLY */
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  /* MEDIA QUERIES */
+  @media screen and (min-width: 320px) {
+    header {
+        
+  }
+    #toggle {
+        background-color: black;
+        color: white;
+        width: 320px;
+        max-height: 0;
+        padding: 0;
+        margin: 0 auto;
+        -webkit-transition: all 0.3s ease;
+    }
+    nav a {
+
+    }
+
+    nav li {
+        display: flex;
+        flex-direction: column;
+        background-color: #55BCD5;
+        text-align: center;
+    }
+
+
+
   }
