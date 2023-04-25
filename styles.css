@@ -267,7 +267,49 @@ footer a {
   @media screen and (min-width: 768px) {
     header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
     }
+    
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    #intro div {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #plan div {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #testimonials div {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+
+    #about div {
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact {
+        display: grid;
+        justify-items: start;
+    }
+
   }
